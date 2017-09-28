@@ -1,11 +1,11 @@
 # TrueSight Intelligence SDK for Java
 
-Java client SDK for integrating to TrueSight Intelligence. Provides methods which can be invoked locally for creating Metrics, events and Measures. As of now only the POST methods are supported for Measurements, Metrics & Events are only supported.
+Java client SDK for integrating to TrueSight Intelligence. Provides methods which can be invoked locally for creating Metrics, events and Measures. As of now only POST methods are supported for Measurements, Metrics & Events.
 
 ## Prerequisites
 Java version required - Java 1.8
 
-### Steps to install & use the SDK (Maven).
+## Steps to install & use the SDK (Maven).
 1.  Clone the repository to your local directory
     $git clone <repository URL>
     
@@ -43,5 +43,6 @@ Java version required - Java 1.8
  Sample code snippets are provided in the repository/samples.
  Please provide the <email-id> & <api-token> while creating the credentials object.
  Refer to the javadoc created during build for more reference.
+ 
  [TrueSight REST API reference](https://documentation.truesight.bmc.com/overview)
 
