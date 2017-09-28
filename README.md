@@ -3,7 +3,7 @@
 Java client SDK for integrating to TrueSight Intelligence. Provides methods which can be invoked locally for creating Metrics, events and Measures. As of now only POST methods are supported for Measurements, Metrics & Events.
 
 ## Prerequisites
-Java version required - Java 1.8
+Java version - Java 1.8
 
 ## Steps to install & use the SDK (Maven).
 1.  Clone the repository to your local directory
@@ -20,7 +20,7 @@ Java version required - Java 1.8
    a. create a folder inside the root directory of the client project (local-repo)
    b. Run the below maven command to install the jar to the directory.
       $ mvn deploy:deploy-file -DgroupId=com.bmc.truesight.saas.apiclient -DartifactId=truesight-saas-api-client -Dversion=1.0
-        -Durl=file:./local-repo/ -DrepositoryId=local-repo -DupdateReleaseInfo=true -Dfile=<sdk-jar-path>
+        -Durl=file:./local-repo/ -DrepositoryId=local-repo -DupdateReleaseInfo=true -Dfile=path-to-the-jar-file
         
 5.  Adding the required depedency to client application POM.
     a. Add the below maven repository details to the client pom.
