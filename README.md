@@ -7,6 +7,7 @@ Java version - Java 1.8
 
 ## Steps to install & use the SDK (Maven).
 1.  Clone the repository to your local directory
+
     `$git clone <repository URL>`
     
 2.  `$cd tsi-sdk-java`
@@ -19,11 +20,13 @@ Java version - Java 1.8
 4. Install the local jar to the maven repository
    a. create a folder inside the root directory of the client project (local-repo)
    b. Run the below maven command to install the jar to the directory.
+   
       `$ mvn deploy:deploy-file -DgroupId=com.bmc.truesight.saas.apiclient -DartifactId=truesight-saas-api-client -Dversion=1.0
         -Durl=file:./local-repo/ -DrepositoryId=local-repo -DupdateReleaseInfo=true -Dfile=<path-to-the-jar-file>`
         
 5.  Adding the required depedency to client application POM.
     a. Add the below maven repository details to the client pom.
+    
     `
       <repositories>
         <repository>
@@ -34,6 +37,7 @@ Java version - Java 1.8
     `
     
     b. Add the below dependency to the POM file.
+    
     `
        <dependency>
             <groupId>com.bmc.truesight.saas.apiclient</groupId>
